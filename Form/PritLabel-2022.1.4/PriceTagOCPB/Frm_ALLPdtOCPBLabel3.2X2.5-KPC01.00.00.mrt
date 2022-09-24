@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Culture isNull="true" />
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SQLite Ref="2" type="Stimulsoft.Report.Dictionary.StiSQLiteDatabase" isKey="true">
+        <Alias>SQLite</Alias>
+        <ConnectionStringEncrypted>9Gzbz+gFw4FGTOGY9cwlY9HosynIUcqBa1vtyeQhdT/mXvtIS3k6mXNp7YDoSaBuhAr37U9ZMQXibP3s/UTg69latYlfa8o59Vx5BP0A6UbFNtUuzVyrzfk=</ConnectionStringEncrypted>
+        <Key>bd32f3a1360d459680d4b568d01b9105</Key>
+        <Name>SQLite</Name>
+      </SQLite>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <TCNTPrnLabelSeq Ref="3" type="Stimulsoft.Report.Dictionary.StiSQLiteSource" isKey="true">
+        <Alias>TCNTPrnLabelSeq</Alias>
+        <Columns isList="true" count="17">
+          <value>FTComName,System.String</value>
+          <value>FTPdtCode,System.String</value>
+          <value>FTPdtName,System.String</value>
+          <value>FTBarCode,System.String</value>
+          <value>FCPdtPrice,System.Double</value>
+          <value>FTPlcCode,System.String</value>
+          <value>FDPrnDate,System.Object</value>
+          <value>FTPdtContentUnit,System.String</value>
+          <value>FTPlbCode,System.String</value>
+          <value>FNPlbQty,System.Int32</value>
+          <value>FTPbnDesc,System.String</value>
+          <value>FTPdtTime,System.String</value>
+          <value>FTPdtMfg,System.String</value>
+          <value>FTPdtImporter,System.String</value>
+          <value>FTPdtRefNo,System.String</value>
+          <value>FTPdtValue,System.String</value>
+          <value>FNPlbSeq,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>6599d4c99eb840e998ea1cbd62348bdc</Key>
+        <Name>TCNTPrnLabelSeq</Name>
+        <NameInSource>SQLite</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from TCNTPrnLabelSeq</SqlCommand>
+      </TCNTPrnLabelSeq>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>8f97b93139fb47a8bf501e6c97407bd5</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,10.2,2.6</ClientRectangle>
+          <ColumnGaps>0.2</ColumnGaps>
+          <Columns>3</Columns>
+          <ColumnWidth>3.2</ColumnWidth>
+          <Components isList="true" count="4">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.15,0.21,3,0.19</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Tahoma,5</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FTPbnDesc}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Image1 Ref="7" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.15,0.02,0.99,0.19</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>/9j/4AAQSkZJRgABAgEAYABgAAD//gASTEVBRFRPT0xTIHYyMC4wAP/bAIQABQUFCAUIDAcHDAwJ
+CQkMDQwMDAwNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQEFCAgK
+BwoMBwcMDQwKDA0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0N
+DQ0N/8QBogAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoLAQADAQEBAQEBAQEBAAAAAAAAAQID
+BAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHw
+JDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6
+g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk
+5ebn6Onq8fLz9PX29/j5+hEAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKR
+obHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hp
+anN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU
+1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/8AAEQgAIgCaAwEiAAIRAQMRAf/aAAwDAQACEQMRAD8A
+9V+MHxZvvhvc2FrYWkV8+oiXh2dWDI0SqqhOpYyfnjFcf/wtz4h/9CrL/wB8XX/xNYn7SjBNe8Os
+xAAlkJJ4AAuLXJJ7AV9Uf8JHpX/P5af+BEX/AMXQB5xa+OvEP/COJrF5pL2+otcmFrIpNuEXzYl2
+7fMwcDnGOaZB8S7x9bs9FltUj+1xWryElw8bT26Sum0gcozFcNzxzzXrdtdwXqebbSJNHkjdGyuu
+R1GVJGR35r5z1v8A5KRB/wBdLf8A9ECvSw0YVFOEoK8YTlzXd7q1tNtDirOUHGUZWTlFWsvO/wB5
+9CatdvYWVxdRgF4IJZFDZKlkRmAIBBxkc4IOOhFfKOh/H7xh4kia40nw8L6GN9jvAZ3CtgNtJVTg
+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
+2Q==</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <Panel1 Ref="8" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0.03,0.39,3.15,0.19</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text2 Ref="9" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>0.12,0,3,0.19</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <MaxNumberOfLines>2</MaxNumberOfLines>
+                  <Name>Text2</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="8" />
+                  <Text>{TCNTPrnLabelSeq.FTPdtName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+                  <Type>DataColumn</Type>
+                </Text2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Panel1>
+            <Panel2 Ref="10" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.03,0.58,3.15,1.62</ClientRectangle>
+              <Components isList="true" count="7">
+                <Text3 Ref="11" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.12,0,3,0.25</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text3</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>ครั้งที่ผลิต : ดูที่ผลิตภัณฑ์</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text3>
+                <Text4 Ref="12" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.12,0.22,3,0.25</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text4</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>วันที่ผลิต : ดูที่ผลิตภัณฑ์</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text4>
+                <Text5 Ref="13" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.12,0.44,3.02,0.22</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text5</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>ผู้นำเข้า : {TCNTPrnLabelSeq.FTPdtImporter}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text5>
+                <Text6 Ref="14" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.12,0.64,3,0.22</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text6</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>เลขที่ใบแจ้ง : {TCNTPrnLabelSeq.FTPdtRefNo}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text6>
+                <Text7 Ref="15" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.12,0.84,3,0.22</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text7</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>ปริมาณสุทธิ : {TCNTPrnLabelSeq.FTPdtValue}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text7>
+                <BarCode1 Ref="16" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+                  <AutoScale>True</AutoScale>
+                  <BackColor>Transparent</BackColor>
+                  <BarCodeType Ref="17" type="Stimulsoft.Report.BarCodes.StiCode39BarCodeType" isKey="true" />
+                  <ClientRectangle>0.13,1.06,2.99,0.35</ClientRectangle>
+                  <Code>{TCNTPrnLabelSeq.FTBarCode}</Code>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9.75,Bold,Point,False,0</Font>
+                  <ForeColor>Black</ForeColor>
+                  <Guid>7d34a26ecd47438894c5f4397f140015</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Name>BarCode1</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <ShowLabelText>False</ShowLabelText>
+                </BarCode1>
+                <Text8 Ref="18" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.13,1.36,2.99,0.2</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Tahoma,5</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text8</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="10" />
+                  <Text>{TCNTPrnLabelSeq.FTBarCode}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text8>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Panel2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>TCNTPrnLabelSeq</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>6056840543c84f0cadcfc3007eb6e619</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>2.6</PageHeight>
+      <PageWidth>10.2</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="19" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true">
+    <PrinterName>Godex RT700i</PrinterName>
+  </PrinterSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/23/2022 12:03:13 PM</ReportChanged>
+  <ReportCreated>1/7/2022 11:14:10 AM</ReportCreated>
+  <ReportFile>\\192.168.0.99\forcustomer\ShareData\Dev\Nui\Work@Home\AdaPos5.0\Stimu\KPC\PritLabel-2022.1.4\PriceTag\Frm_ALLPdtOCPBLabel3.2X2.5-KPC.mrt</ReportFile>
+  <ReportGuid>a1be2d15b8a84d6dab3a41ca03b83398</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.4.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

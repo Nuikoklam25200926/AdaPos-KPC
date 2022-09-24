@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Culture isNull="true" />
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SQLite Ref="2" type="Stimulsoft.Report.Dictionary.StiSQLiteDatabase" isKey="true">
+        <Alias>SQLite</Alias>
+        <ConnectionStringEncrypted>9Gzbz+gFw4FGTOGY9cwlY9HosynIUcqBa1vtyeQhdT/mXvtIS3k6mXNp7YDoSaBuhAr37U9ZMQXibP3s/UTg69latYlfa8o59Vx5BP0A6UbFNtUuzVyrzfk=</ConnectionStringEncrypted>
+        <Key>bd32f3a1360d459680d4b568d01b9105</Key>
+        <Name>SQLite</Name>
+      </SQLite>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <TCNTPrnLabelSeq Ref="3" type="Stimulsoft.Report.Dictionary.StiSQLiteSource" isKey="true">
+        <Alias>TCNTPrnLabelSeq</Alias>
+        <Columns isList="true" count="28">
+          <value>FTLblCode,System.String</value>
+          <value>FTComName,System.String</value>
+          <value>FTPdtCode,System.String</value>
+          <value>FTPdtName,System.String</value>
+          <value>FTBarCode,System.String</value>
+          <value>FCPdtPrice,System.Double</value>
+          <value>FTPlcCode,System.String</value>
+          <value>FDPrnDate,System.Object</value>
+          <value>FTPdtContentUnit,System.String</value>
+          <value>FTPlbCode,System.String</value>
+          <value>FNPlbQty,System.Int32</value>
+          <value>FTPbnDesc,System.String</value>
+          <value>FTPdtTime,System.String</value>
+          <value>FTPdtMfg,System.String</value>
+          <value>FTPdtImporter,System.String</value>
+          <value>FTPdtRefNo,System.String</value>
+          <value>FTPdtValue,System.String</value>
+          <value>FNPlbSeq,System.Int32</value>
+          <value>ORIGINAL,FTPlbCode,FTPlbCode1,FTPlbCode1,System.String</value>
+          <value>ORIGINAL,FTLblCode,FTLblCode1,FTLblCode1,System.String</value>
+          <value>FTSppCode,System.String</value>
+          <value>FTPlbStaUse,System.String</value>
+          <value>FTPlbPrnDriver,System.String</value>
+          <value>FTPlbPrnTray,System.String</value>
+          <value>FDLastUpdOn,System.DateTime</value>
+          <value>FTLastUpdBy,System.String</value>
+          <value>FDCreateOn,System.DateTime</value>
+          <value>FTCreateBy,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>6599d4c99eb840e998ea1cbd62348bdc</Key>
+        <Name>TCNTPrnLabelSeq</Name>
+        <NameInSource>SQLite</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>SELECT FTLblCode,* FROM TCNTPrnLabelSeq Pls LEFT JOIN
+TCNMPrnLabel Plb ON Pls.FTPlbCode = Plb.FTPlbCode
+</SqlCommand>
+      </TCNTPrnLabelSeq>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>8f97b93139fb47a8bf501e6c97407bd5</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,10.1,2.5</ClientRectangle>
+          <ColumnGaps>0.2</ColumnGaps>
+          <Columns>3</Columns>
+          <ColumnWidth>3.2</ColumnWidth>
+          <Components isList="true" count="3">
+            <BarCode1 Ref="6" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <AutoScale>True</AutoScale>
+              <BackColor>Transparent</BackColor>
+              <BarCodeType Ref="7" type="Stimulsoft.Report.BarCodes.StiCode128AutoBarCodeType" isKey="true" />
+              <ClientRectangle>0.15,0.65,2.93,1.3</ClientRectangle>
+              <Code>{TCNTPrnLabelSeq.FTBarCode}</Code>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>411957695978428dae992803154919f7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Name>BarCode1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ShowLabelText>False</ShowLabelText>
+            </BarCode1>
+            <Text8 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.15,2.05,2.93,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,7</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FTBarCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text8>
+            <Text1 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.15,0.05,2.93,0.45</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,5.5,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{IIF(TCNTPrnLabelSeq.FTLblCode=="L006","NOT FOR SALE / NO REFUND","")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Bottom</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>TCNTPrnLabelSeq</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>6056840543c84f0cadcfc3007eb6e619</Guid>
+      <Margins>0.1,0,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>2.6</PageHeight>
+      <PageWidth>10.2</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="10" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true">
+    <PrinterName>Godex RT700i</PrinterName>
+  </PrinterSettings>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/23/2022 5:40:56 PM</ReportChanged>
+  <ReportCreated>1/7/2022 11:14:10 AM</ReportCreated>
+  <ReportFile>\\192.168.0.99\forcustomer\sharedata\dev\nui\work@home\adapos5.0\stimu\kpc\pritlabel-2022.1.4\pricetag2.5x3.2\frm_allpdtpricetag2.5x3.2-kpc01.00.00.mrt</ReportFile>
+  <ReportGuid>cf7ef4eb2df54bfa82e7a91f1d4b5220</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.4.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

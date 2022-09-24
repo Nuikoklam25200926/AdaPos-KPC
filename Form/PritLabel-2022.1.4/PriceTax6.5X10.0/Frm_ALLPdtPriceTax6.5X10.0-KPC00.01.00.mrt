@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <SQLite Ref="2" type="Stimulsoft.Report.Dictionary.StiSQLiteDatabase" isKey="true">
+        <Alias>SQLite</Alias>
+        <ConnectionStringEncrypted>9Gx3z+gFw4hGTOHsY8wlY9Fe0SnIUaNBa1vtycshdT/mFHNIRnk6TekG7Zh9Sa7Hwgr37ecJMU1DeP0ISUQgEp5ac41lVlmFa0d5OP0d6UbFetUrzVxLzfk=</ConnectionStringEncrypted>
+        <Key>5d466cedf2cf4bad81558445a52e82f3</Key>
+        <Name>SQLite</Name>
+      </SQLite>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <TCNTPrnLabelSeq Ref="3" type="Stimulsoft.Report.Dictionary.StiSQLiteSource" isKey="true">
+        <Alias>TCNTPrnLabelSeq</Alias>
+        <Columns isList="true" count="17">
+          <value>FTComName,System.String</value>
+          <value>FTPdtCode,System.String</value>
+          <value>FTPdtName,System.String</value>
+          <value>FTBarCode,System.String</value>
+          <value>FCPdtPrice,System.Double</value>
+          <value>FTPlcCode,System.String</value>
+          <value>FDPrnDate,System.Object</value>
+          <value>FTPdtContentUnit,System.String</value>
+          <value>FTPlbCode,System.String</value>
+          <value>FNPlbQty,System.Int32</value>
+          <value>FTPbnDesc,System.String</value>
+          <value>FTPdtTime,System.String</value>
+          <value>FTPdtMfg,System.String</value>
+          <value>FTPdtImporter,System.String</value>
+          <value>FTPdtRefNo,System.String</value>
+          <value>FTPdtValue,System.String</value>
+          <value>FNPlbSeq,System.Int32</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>8bc869fa08594e3d997ab7a919b00c7b</Key>
+        <Name>TCNTPrnLabelSeq</Name>
+        <NameInSource>SQLite</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>SELECT 
+*
+	FROM TCNTPrnLabelSeq</SqlCommand>
+      </TCNTPrnLabelSeq>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>74c4fcc941544e74b0c420c0426ae706</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <DataBand1 Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanBreak>True</CanBreak>
+          <ClientRectangle>0,0.4,20.7,6.5</ClientRectangle>
+          <Columns>2</Columns>
+          <ColumnWidth>10</ColumnWidth>
+          <Components isList="true" count="8">
+            <BarCode1 Ref="6" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <AutoScale>True</AutoScale>
+              <BackColor>Transparent</BackColor>
+              <BarCodeType Ref="7" type="Stimulsoft.Report.BarCodes.StiCode128AutoBarCodeType" isKey="true" />
+              <ClientRectangle>0.23,3.87,9.43,1.59</ClientRectangle>
+              <Code>{TCNTPrnLabelSeq.FTBarCode}</Code>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9.75,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>84c7c15c09a143679575505fb26d9051</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Name>BarCode1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </BarCode1>
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.22,2.41,9.46,1.42</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,40,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FCPdtPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="9" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.38,0.2,2.31,2.12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,13,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LineSpacing>1.2</LineSpacing>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FTPdtContentUnit}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+            <Text2 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.22,0.2,7.12,2.12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Editable>True</Editable>
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,13,Bold</Font>
+              <Guid>bda23b2e0185410b9e8d4865802e765a</Guid>
+              <LineSpacing>1.2</LineSpacing>
+              <Margins>0,0,0,0</Margins>
+              <MaxNumberOfLines>2</MaxNumberOfLines>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FTPdtName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Text2>
+            <Text5 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,5.58,3.69,0.52</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FTPlcCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.67,5.58,3.02,0.52</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>FIRSTER Headline,9</Font>
+              <Guid>617f8166f31d439c9c10b4e1672aeabe</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{TCNTPrnLabelSeq.FDPrnDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="14" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <StartPointPrimitive1 Ref="15" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,0,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>f11cc6890927442984bf1b107293e824</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <EndPointPrimitive1 Ref="16" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>10,6.5,0,0</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <ReferenceToGuid>f11cc6890927442984bf1b107293e824</ReferenceToGuid>
+            </EndPointPrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>TCNTPrnLabelSeq</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <RectanglePrimitive1 Ref="17" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0,0.4,10,6.5</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Guid>f11cc6890927442984bf1b107293e824</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Size>0</Size>
+        </RectanglePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f3f5c542c7da456fb33665e0ca1a3484</Guid>
+      <Margins>4.5,4.5,2,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/25/2022 8:46:51 PM</ReportChanged>
+  <ReportCreated>1/6/2022 1:18:31 PM</ReportCreated>
+  <ReportFile>\\192.168.0.99\forcustomer\sharedata\dev\nui\work@home\adapos5.0\stimu\kpc\22-04-25\pritlabel-2022.1.4\frm_allpdtpricetax6.5x10.0-kpc.mrt</ReportFile>
+  <ReportGuid>6e4f7a82bc3047b1a581d0a1895324a2</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2022.1.4.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
